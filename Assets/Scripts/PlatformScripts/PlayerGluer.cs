@@ -18,7 +18,18 @@ public class PlayerGluer : MonoBehaviour
     // OnCollisionExit2D is called when this collider2D/rigidbody2D has stopped touching another rigidbody2D/collider2D (2D physics only)
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(_player != null)
+        ReleasePlayerIfAny();
+    }
+
+    // This function is called when the MonoBehaviour will be destroyed
+    private void OnDestroy()
+    {
+        ReleasePlayerIfAny();
+    }
+
+    void ReleasePlayerIfAny()
+    {
+        if (_player != null)
         {
             _player.transform.SetParent(null);
             _player = null;

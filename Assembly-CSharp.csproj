@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameStarter.cs" />
     <Compile Include="Assets\Scripts\PlatformScripts\HitFromPlayerDetector.cs" />
+    <Compile Include="Assets\Scripts\PlatformScripts\InstantPlatformFaller.cs" />
     <Compile Include="Assets\Scripts\PlatformScripts\LevelReporter.cs" />
     <Compile Include="Assets\Scripts\PlatformScripts\OnFallDestroyer.cs" />
     <Compile Include="Assets\Scripts\PlatformScripts\PlatformFaller.cs" />
