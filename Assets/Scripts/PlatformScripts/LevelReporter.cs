@@ -9,6 +9,6 @@ public class LevelReporter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<FallChecker>().Fallen += () => LevelLowered.Invoke();
+        GetComponent<FallChecker>().Fallen += () => LevelLowered?.Invoke();
     }
 }
